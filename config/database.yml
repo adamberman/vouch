@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: vouch_development
+  host: localhost
+  username: adamberman
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -78,8 +80,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: vouch_production
-  username: vouch
-  password: <%= ENV['VOUCH_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: vouch_production
+#   username: vouch
+#   password: <%= ENV['VOUCH_DATABASE_PASSWORD'] %>
