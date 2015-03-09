@@ -36,10 +36,6 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'guard-rspec'
-  gem 'spork-rails'
-  gem 'childprocess'
-  gem 'guard-spork'
 end
 
 group :test do
