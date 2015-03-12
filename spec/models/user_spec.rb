@@ -40,4 +40,13 @@ RSpec.describe User, type: :model do
   		end
   	end
   end
+
+  describe "when email address is already taken" do
+  	before do
+  		dup_user = @user.dup
+  		dup_user.save
+  	end
+
+  	it { should_not be_valid }
+  end
 end
